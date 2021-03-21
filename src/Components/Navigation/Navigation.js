@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navigation.css";
 import {
   Navbar,
   Nav
 } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import { UserContext } from "../../App";
 const Navigation = () => {
+  const [isSignIn, setIsSignIn] = useContext(UserContext);
+  console.log(isSignIn.name);
+
   return (
     <div className="navigation">
       <Navbar expand="lg">
@@ -27,9 +31,11 @@ const Navigation = () => {
             <NavLink exact={true} activeClassName="is-active" to="/contact">
               Contact
             </NavLink>
-            <NavLink exact={true} activeClassName="is-active" to="/login">
-              Login
-            </NavLink>
+            {isSignIn.displayName ? <p>
+              {isSignIn.displayName}
+            </p> : <NavLink exact={true} activeClassName="is-active" to="/login">
+              Login / Sign Up
+            </NavLink>}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
