@@ -1,0 +1,52 @@
+.homePage {
+  background-image: url("../../Images/Bg.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  background-attachment: fixed;
+}
+.homePage__cardContainer {
+  padding: 0px 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.homePage__cardContainer > div {
+}
+.cardBox {
+  display: flex;
+  justify-content: center;
+}
+.Card {
+  background-color: white;
+  padding: 10px;
+  width: 400px;
+  height: 280px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.Card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.Card h3 {
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .Card {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .Card {
+    margin-bottom: 30px !important;
+  }
+}

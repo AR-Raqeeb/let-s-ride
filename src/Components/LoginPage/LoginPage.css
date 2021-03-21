@@ -1,0 +1,95 @@
+.loginPage {
+  padding: 10px 10%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.loginPage ::placeholder {
+  color: black;
+}
+.loginPage h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.loginPage > div:not(:last-child) {
+  border: 1px solid gray;
+  padding: 20px 30px;
+}
+
+.loginPage form {
+  display: flex;
+  flex-direction: column;
+}
+.loginPage form input {
+  margin: 20px 0px;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 5px 0px;
+  border-bottom: 1px solid lightgray;
+  border-radius: 10px;
+}
+.loginPage form button {
+  background: #ff6e40;
+  border: none;
+  color: white;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+.loginPage div a {
+  text-align: center;
+  color: #ff6e40;
+}
+.line {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+.line__text {
+  position: absolute;
+  display: inline-block;
+  padding: 5px;
+  background: #ffffff;
+  color: #444444;
+}
+.line hr {
+  background: #cccccc;
+  border-color: transparent;
+  width: 100%;
+}
+.continue__with {
+  border: 1px solid lightgray;
+  display: flex;
+  width: 500px;
+  margin: 10px 0px;
+  padding: 2px 5px;
+  border-radius: 50px;
+}
+.continue__with img {
+  width: 60px;
+  height: 40px;
+  object-fit: contain;
+}
+.continue__with button {
+  flex: 1;
+  background: none;
+  border: none;
+  font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+  .line {
+    width: 200px;
+  }
+  .continue__with {
+    display: flex;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .Card {
+    margin-bottom: 30px !important;
+  }
+}
