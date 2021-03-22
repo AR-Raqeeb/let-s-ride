@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LoginPage from "./Components/LoginPage/LoginPage";
 import { createContext, useState } from "react";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
-import Destination from "./Components/Destination/Destination";
+import RideSearch from "./Components/RideSearch/RideSearch";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export const UserContext = createContext();
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState({});
@@ -16,15 +18,15 @@ function App() {
           <Route exact path="/">
             <HomePage></HomePage>
           </Route>
-          <Route exact path="/home">
+          <Route path="/home">
             <HomePage></HomePage>
           </Route>
-          <Route exact path="/login">
+          <Route path="/login">
             <LoginPage></LoginPage>
           </Route>
-          <PrivateRoute exact path="/destination">
-            <Destination></Destination>
-          </PrivateRoute>
+          <Route path="/search/:id">
+            <RideSearch></RideSearch>
+          </Route>
         </Switch>
       </Router>
       </UserContext.Provider>

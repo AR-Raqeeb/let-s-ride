@@ -1,0 +1,79 @@
+.rideSearch{
+    display: flex;
+}
+.searchSection {
+    /* position: absolute; */
+    background: #EFEFEF;
+    border-radius: 10px;
+    height: 334px;
+    left: 95px;
+    width: 370px;
+    
+    border: 1px solid gray;
+    padding: 20px 30px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.rideSearch ::placeholder {
+    color: black;
+}
+
+.rideSearch h3 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #0915b6;
+    padding: 10px;
+}
+
+.rideSearch>div:not(:last-child) {
+    border: 1px solid gray;
+    padding: 20px 30px;
+}
+
+.rideSearch form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rideSearch form input {
+    margin: 20px 0px;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 5px 0px;
+    border-bottom: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.rideSearch form button {
+    background: #ff6e40;
+    border: none;
+    color: white;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.locationDetails{
+    height: 100px;
+    width: 250px;
+    border: 1px solid gray;
+    background: #FF6E40;
+    border-radius: 10px;
+}
+.rideDetails{
+    height: 50px;
+    width: 250px;
+    border: 1px solid gray;
+    margin-left: 1px !important;
+    margin-top: 15px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}

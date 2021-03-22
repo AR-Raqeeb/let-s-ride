@@ -31,9 +31,9 @@ const Navigation = () => {
             <NavLink exact={true} activeClassName="is-active" to="/contact">
               Contact
             </NavLink>
-            {isSignIn.displayName ? <p>
+            {isSignIn.displayName ? <h5 id='profileName'>
               {isSignIn.displayName}
-            </p> : <NavLink exact={true} activeClassName="is-active" to="/login">
+            </h5> : <NavLink exact={true} activeClassName="is-active" to="/login">
               Login / Sign Up
             </NavLink>}
           </Nav>

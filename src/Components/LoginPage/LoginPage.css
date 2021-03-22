@@ -10,6 +10,7 @@
 .loginPage h3 {
   font-weight: bold;
   font-size: 25px;
+  color: #0915b6;
 }
 .loginPage > div:not(:last-child) {
   border: 1px solid gray;
